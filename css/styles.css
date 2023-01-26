@@ -1,0 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body {
+    background-color: #DAAD86;
+}
+
+#bgColor {
+    background-color: #BC986A;
+}
+
+header {
+    background-color: #FBEEC1;
+    background-image: url("../images/bakery.jpg"); /* Image by wayhomestudio on Freepik */
+    background-size: auto;
+}
+
+footer {
+    background-color: #8D8741;
+}
+
+#contact {
+    background-color: #DAAD86;
+}
+
