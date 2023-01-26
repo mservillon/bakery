@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bakery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="js/includes.js"></script>
+</head>
+<body>
+    <div id="bgColor" class="container">
+        <div data-my-include-html="includes\header.html"></div>
+        <div data-my-include-html="includes\navigation.html"></div>
+
+        <main class="p-4">
+            <div class="row">
+                <section class="col-sm-12 col-md-6">
+                    <h1 class="mt-md-4 text-center">Ways to Contact</h1>
+                    <p class="fs-5 text-center">We only have two methods of contact for the time being:</p>
+                    <p class="fs-5 text-center m-0">Email: contact@bakeshop.com</p>
+                    <p class="fs-5 text-center m-0 mb-4">Phone Number: (608) 353-1024</p>
+                    <p class="fs-5 text-center m-0 mb-sm-4">If you prefer to fill out the contact form, please feel free to do so.</p>
+                </section>
+
+                <div class="col-sm-12 col-md-6">
+                    <form action="https://www.w3schools.com/action_page.php" id="contactForm" method="get" class="needs-validation" novalidate>                
+                        <div class="form-check">
+
+                            <p class="text-center text-danger">* - required fields</p>
+
+                            <fieldset>
+                                <label class="fw-bold" for="fname">First Name<span class="text-danger">*</span></label>
+                                <input type="text" name="first" class="form-control" id="fname" maxlength="30"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please enter a first name.
+                                </div>
+
+                                <label class="fw-bold" for="lname">Last Name<span class="text-danger">*</span></label>
+                                <input type="text"
+                                    name="last" class="form-control" id="lname" maxlength="40"
+                                        required>
+                                <div class="invalid-feedback">
+                                    Please enter a last name.
+                                </div>
+
+                                <label class="fw-bold" for="email">Email address<span class="text-danger">*</span></label>
+                                <input
+                                    name="email" id="email" type="email"
+                                    class="form-control" maxlength="60"
+                                        required>
+                                <div class="invalid-feedback">
+                                    Please enter an email address.
+                                </div>
+
+                                <label class="fw-bold" for="phone">Phone<span class="text-danger">*</span></label>
+                                <input type="text" name="phone" id="phone" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" required>
+                                <div class="invalid-feedback">
+                                    Please enter a phone number.
+                                </div>
+
+                                <label class="fw-bold" for="contactDrop">Subject (Optional)</label>
+                                <select id="contactDrop" class="form-control">
+                                <option value="empty">---</option>
+                                <option value="employment">Employment Opportunities</option>
+                                <option value="catering">Catering-Specific Questions</option>
+                                <option value="item">Item Availability</option>
+                                <option value="newBakeryItem">New Bakery Item</option>
+                                <option value="other">Other</option>
+                                </select>
+
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="fw-bold form-label">Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                </div>
+
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="form-group border m-0 mb-4 p-3 bg-light">
+                                    <h2 class="w-auto fw-bold fs-6 text-dark">Preferred Method of Contact</h2>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="email" id="prefEmail" name="prefMethod" required>
+                                        <label class="form-check-label" for="prefEmail">Email</label>
+                                    </div>
+
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="phone" name="prefMethod" id="prefPhone" required>
+                                        <label class="form-check-label" for="prefPhone">Phone</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="form-group border m-0 mb-4 p-3 bg-light">
+                                    <h2 class="w-auto fw-bold fs-6 text-dark">OPTIONAL: Favorite Bakery Item (click all that apply)</h2>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" name="favoriteFood1" value="bread" type="checkbox" id="breadForm" >
+                                            <label class="form-check-label" for="breadForm">Bread</label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="favoriteFood2" value="donuts" id="donutForm" >
+                                            <label class="form-check-label" for="donutForm">Donuts</label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox"
+                                            name="favoriteFood3" value="muffins" id="muffinForm" >
+                                            <label class="form-check-label" for="muffinForm">Muffins</label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="favoriteFood4" value="other" id="otherForm" >
+                                            <label class="form-check-label" for="otherForm">Other</label>
+                                        </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="d-flex justify-content-evenly">
+                                <button class="bg-dark text-white p-2" type="submit" data-target="contactForm">Submit</button>
+                                <button class="bg-dark px-2 text-white" type="reset">Clear</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <div data-my-include-html="includes\footer.html"></div>
+
+    </div>
+
+    <script src="js/formValidation.js"></script>
+
+    <script>includeHTML();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
